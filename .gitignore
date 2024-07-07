@@ -1,10 +1,8 @@
-tt.*
-.tests
-doc/tags
-debug
-.repro
-foo.*
-*.log
-data
-lazy-lock.json
+tChantelle
+lunarvim
 lazyvim
+colourscheme
+astronvim
+neovim
+spell/*
+lazy-lock.json
