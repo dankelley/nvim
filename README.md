@@ -38,3 +38,7 @@ displays the last command I typed, or maybe the family of commands. All of
 these things -- and many more -- are mysteries to me.  But I do see merit in
 leaving things alone, to avoid having things look too different from the how
 they look on other folks' machines.  That's why I changed only one thing.
+
+### Switch to a new colour scheme
+
+I switched to `slate` by adding the `lua/plugins/colorscheme.lua` file.
