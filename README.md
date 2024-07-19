@@ -26,3 +26,15 @@ Note that autoformat-on-save can be turned on and off with `SPC u f`, if desired
 ### Set up for editing (and running) R files
 
 The action for this is in the `lua/plugins/rlang.lua` file.
+
+### Make lower status line show file type
+
+This is done in the `lua/plugins/lualine.lua` file.  I replaced something else
+that showed up as an icon that I didn't understand.  Actually, there are lots
+of icons that I don't understand.  One looks like a box, with a number beside
+it. Another is a white plus sign in a black box, with a number beside it.  And
+there is a question mark before name of the file type.  Also, it (sometimes)
+displays the last command I typed, or maybe the family of commands. All of
+these things -- and many more -- are mysteries to me.  But I do see merit in
+leaving things alone, to avoid having things look too different from the how
+they look on other folks' machines.  That's why I changed only one thing.
