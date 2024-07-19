@@ -22,3 +22,7 @@ off the feature by adding BLOCK 1 to the
 `.config/nvim/lua/config/autocmds.lua` file.`
 
 Note that autoformat-on-save can be turned on and off with `SPC u f`, if desired.
+
+### Set up for editing (and running) R files
+
+The action for this is in the `lua/plugins/rlang.lua` file.
