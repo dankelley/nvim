@@ -3,11 +3,10 @@
 ## Introduction
 
 This is based on a starter template for
-[LazyVim](https://github.com/LazyVim/LazyVim), with some modifications
-to work with R files. Refer to the
-[documentation](https://lazyvim.github.io/installation) to get
-started with lazyvim.  I have some notes on how I transitioned from
-lunarvim on my blog at
+[LazyVim](https://github.com/LazyVim/LazyVim), with some modifications to work
+with R files. Refer to the
+[documentation](https://lazyvim.github.io/installation) to get started with
+lazyvim.  I have some notes on how I transitioned from lunarvim on my blog at
 [https://dankelley.github.io/dek_blog/2024/07/06/setting-up-lazyvim.html](https://dankelley.github.io/dek_blog/2024/07/06/setting-up-lazyvim.html).
 
 ## Customization Details
@@ -25,7 +24,9 @@ Note that autoformat-on-save can be turned on and off with `SPC u f`, if desired
 
 ### Set up for editing (and running) R files
 
-The action for this is in the `lua/plugins/rlang.lua` file.
+The action for this is in the `lua/plugins/rlang.lua` file.  I am using the
+underline character for assignment, because I like that scheme.  If you prefer
+to use the default, comment out the `opts` setting in that file.
 
 ### Make lower status line show file type
 
