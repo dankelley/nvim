@@ -1,8 +1,9 @@
 return {
-  -- R support (see https://github.com/R-nvim/R.nvim)
+  -- R support (see https://github.com/R-nvim/R.nvim
   {
     "R-nvim/R.nvim",
     lazy = false,
+    opts = { assignment_keymap = "_" },
   },
   {
     "nvim-treesitter/nvim-treesitter",
