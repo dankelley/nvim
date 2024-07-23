@@ -11,6 +11,12 @@ lazyvim.  I have some notes on how I transitioned from lunarvim on my blog at
 
 ## Customization Details
 
+### Use a 'nerd' font in terminal settings
+
+It helps to use a "nerd" font, so that various icons will show up in the lualine
+and elsewhere.  I am finding `JetBrainsMono Nerd Font` to my liking lately, and
+so that is what I have set for my iTerm2 profile.
+
 ### Turn off the autoformat-on-save feature (autocmds.lua BLOCK 1)
 
 **Context.** Lazyvim was formatting files upon saves.  I liked this file at
