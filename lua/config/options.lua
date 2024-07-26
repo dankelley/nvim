@@ -7,4 +7,9 @@ vim.o.tabstop = 4
 vim.o.expandtab = true
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
+-- BLOCK 1 start
 vim.g.maplocalleader = ","
+-- BLOCK 1 end
+-- BLOCK 2 start
+vim.opt.wrap = true
+-- BLOCK 2 end
