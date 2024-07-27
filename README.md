@@ -40,6 +40,11 @@ To make any copying command also copy to the system clipboard, something I learn
 
 To do this, I copied `lua/plugins/telescope.lua` in the supplemental materials for Reference 1.
 
-# References
+## Prevent long-line warnings for .md files
+
+The warning is MD013, and to make it go away, I followed advice given in Reference 2 (except that I had to change what seemed to have been a chained assignment into two assignments, to avoid a lua error message).  The results in the `lua/plugins/lint.lua` file.
+
+## References
 
 1. How I Setup Neovim To Make It AMAZING in 2024: The Ultimate Guide, 2024. <https://www.youtube.com/watch?v=6pAG3BHurdM>.
+2. https://www.reddit.com/r/neovim/comments/19ceuoq/comment/kuna12d/
