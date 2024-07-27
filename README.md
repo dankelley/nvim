@@ -18,7 +18,7 @@ Note that autoformat-on-save can be turned on and off with `SPC u f`, if desired
 
 ### Set up for editing (and running) R files
 
-The main action for this is in the `lua/plugins/rlang.lua` file.  I am using the underline character for assignment, because I like that scheme.  If you prefer to use the default, comment out the `opts` setting in that file.  Also, I like to use `,` for the local leader in R, and I do that in BLOCK 2 of the `lua/config/options.lua` file.
+The main action for this is in the `lua/plugins/rlang.lua` file.  I am using the underline character for assignment, because I like that scheme.  If you prefer to use the default, comment out the `opts` setting in that file.  Also, I like to use `,` for the local leader in R, and I do that in NOTE 1 of the `lua/config/options.lua` file.
 
 ### Make lower status line show file type
 
@@ -27,3 +27,15 @@ This is done in the `lua/plugins/lualine.lua` file.  I replaced something else t
 ### Switch to a new colour scheme
 
 I switched to `slate` by adding the `lua/plugins/colorscheme.lua` file.
+
+### Use soft wrapping
+
+I set up soft wrapping (as explained by CLark Richards) at NOTE 2 of the `lua/config/options.lua` file.
+
+### Store copied things on system clipboard
+
+To make any copying command also copy to the system clipboard, something I learned at about 9:42 of Reference 1, I did as at NOTE 3 of the `lua/config/options.lua` file.
+
+# References
+
+1. How I Setup Neovim To Make It AMAZING in 2024: The Ultimate Guide, 2024. <https://www.youtube.com/watch?v=6pAG3BHurdM>.
