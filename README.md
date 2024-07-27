@@ -36,6 +36,10 @@ I set up soft wrapping (as explained by CLark Richards) at NOTE 2 of the `lua/co
 
 To make any copying command also copy to the system clipboard, something I learned at about 9:42 of Reference 1, I did as at NOTE 3 of the `lua/config/options.lua` file.
 
+### Set up telescope
+
+To do this, I copied `lua/plugins/telescope.lua` in the supplemental materials for Reference 1.
+
 # References
 
 1. How I Setup Neovim To Make It AMAZING in 2024: The Ultimate Guide, 2024. <https://www.youtube.com/watch?v=6pAG3BHurdM>.
