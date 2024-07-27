@@ -1,7 +1,8 @@
+if true then return {} end
 return {
     "mfussenegger/nvim-lint",
     opts = {
-        linters_by_ft = { "markdownlint" },
+        --linters_by_ft = { "markdownlint" },
         markdown = { "markdownlint" },
     },
     config = function()
