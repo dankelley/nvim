@@ -42,7 +42,23 @@ To do this, I copied `lua/plugins/telescope.lua` in the supplemental materials f
 
 ## Prevent long-line warnings for .md files
 
-The warning is MD013, and to make it go away, I followed advice given in Reference 2 (except that I had to change what seemed to have been a chained assignment into two assignments, to avoid a lua error message).  The results in the `lua/plugins/lint.lua` file.
+The warning is MD013, and I did a lot of web searching for ways to make this go away.  None of them worked, even though some were marked as "answers" on the discussion sites.  (I even ran into code that was marked as an answer that was not valid lua.)
+
+And, of course, there is always the possibility that things that worked a year ago, even earlier this year, might not work today.  Packages change over time.
+
+In the end, I found two solutions.
+
+*Method 1.* Create a file in the same directory of your markdown file, named `.markdownlint.yaml` and containing the following.  I got this hint from a posting by [David Anson](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/schema/.markdownlint.yaml), who is the author of `markdownlint` and so I think this is a good source.
+
+```yaml
+MD013: false
+```
+
+*Method 2.* Put a comment in the markdown file, in the following form.  I do not know whether this will mess things up if you are converting the markdown to formats other than html, though.
+
+```html
+<!- markdownlint-disable MD013 -->
+```
 
 ## References
 
