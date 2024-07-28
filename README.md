@@ -48,17 +48,43 @@ And, of course, there is always the possibility that things that worked a year a
 
 In the end, I found two solutions.
 
-*Method 1.* Create a file in the same directory of your markdown file, named `.markdownlint.yaml` and containing the following.  I got this hint from a posting by [David Anson](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/schema/.markdownlint.yaml), who is the author of `markdownlint` and so I think this is a good source.
+*Method 1.* Put a comment in the markdown file, in the following form.  I do not know whether this will mess things up if you are converting the markdown to formats other than html, though.
+
+```html
+<!- markdownlint-disable MD013 -->
+```
+
+*Method 2.* Create a file in the same directory of your markdown file, named `.markdownlint.yaml` and containing the following.  I got this hint from a posting by [David Anson](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/schema/.markdownlint.yaml), who is the author of `markdownlint` and so I think this is a good source.
 
 ```yaml
 MD013: false
 ```
 
-*Method 2.* Put a comment in the markdown file, in the following form.  I do not know whether this will mess things up if you are converting the markdown to formats other than html, though.
+Alternatively, create a local `.markdownlint.jsonc` file with contents
 
-```html
-<!- markdownlint-disable MD013 -->
+```json
+{
+    "MD013": false
+}
 ```
+
+*Method 3.* **Does not work for me!**  Put the `.mardownlint.jsonc` file from the previous method in your top (`~`) directory, and put the following into a file named `~/.config/nvim/plugins/lint.lua`.  Supposedly, this will make long lines be accepted for any file.  However, this does not work for me.  I don't know why, and am including this just as a starting point for later exploration (likely not by me ... I am happy enough with the local solution of method 2).
+
+```lua
+return {
+    {
+        "mfussenegger/nvim-lint",
+            opts = {
+                linters = {
+                    markdownlint = {
+                        args = { "--config", "~/.markdownlint.jsonc", "--" },
+                    },
+                },
+            },
+    },
+}
+```
+If you have the Create a file in the same directory of your markdown file, named `.markdownlint.yaml` and containing the following.  I got this hint from a posting by [David Anson](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/schema/.markdownlint.yaml), who is the author of `markdownlint` and so I think this is a good source.
 
 ## References
 
