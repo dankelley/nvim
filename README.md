@@ -84,9 +84,7 @@ return {
     },
 }
 ```
-If you have the Create a file in the same directory of your markdown file, named `.markdownlint.yaml` and containing the following.  I got this hint from a posting by [David Anson](https://github.com/DavidAnson/markdownlint/blob/v0.32.1/schema/.markdownlint.yaml), who is the author of `markdownlint` and so I think this is a good source.
 
 ## References
 
 1. How I Setup Neovim To Make It AMAZING in 2024: The Ultimate Guide, 2024. <https://www.youtube.com/watch?v=6pAG3BHurdM>.
-2. https://www.reddit.com/r/neovim/comments/19ceuoq/comment/kuna12d/
