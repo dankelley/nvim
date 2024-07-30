@@ -46,7 +46,27 @@ The warning is MD013, and I did a lot of web searching for ways to make this go 
 
 And, of course, there is always the possibility that things that worked a year ago, even earlier this year, might not work today.  Packages change over time.
 
-In the end, I found two solutions.
+I installed a standalone tester by doing
+
+```sh
+brew install markdownlint-cli
+```
+
+and tried that out.  Its documentation suggests that
+
+```sh
+markdownlint-cli --disable MD013 file.md
+```
+
+ought to work, but it does not.  However, if I do
+
+```sh
+markdownlint-cli --disable=MD013 file.md
+```
+
+then it does work.  I see a glimmer of hope in this result.  Perhaps this explains why the neovim lua codes I've seen are not working, for they seem to be passing the first form to the linter. I tried using `"--disable=MD013"` in the lua code, but that did not work.  I'm just guessing here, though, and my patience is wearing thin, given what I consider to be somewhat minimal benefits of using a linter on markdown.
+
+I may return to this from time to time, in hopes that somebody will suggest a solution that works in neovim.  In the meantime, I found two solutions, as follows.
 
 *Method 1.* Put a comment in the markdown file, in the following form.  I do not know whether this will mess things up if you are converting the markdown to formats other than html, though.
 
@@ -83,7 +103,6 @@ return {
             },
     },
 }
-```
 
 ## References
 
