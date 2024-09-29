@@ -103,6 +103,17 @@ return {
             },
     },
 }
+```
+
+## Silence low-priority popup messages
+
+This is done in `plugins/notify.lua`. To find the number scheme, type
+
+```lua
+print(vim.inspect(vim.log.levels))
+```
+
+in a neovim window.
 
 ## References
 
