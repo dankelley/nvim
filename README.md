@@ -4,6 +4,8 @@
 
 This is based on a starter template for [LazyVim](https://github.com/LazyVim/LazyVim), with some modifications to work with R files. Refer to the [documentation](https://lazyvim.github.io/installation) to get started with lazyvim.  I have some notes on how I transitioned from lunarvim on my blog at [https://dankelley.github.io/dek_blog/2024/07/06/setting-up-lazyvim.html](https://dankelley.github.io/dek_blog/2024/07/06/setting-up-lazyvim.html).
 
+But, before I start, I ought to explain how I installed `neovim`. I work on MacOS, and so I either install a development version from the neovim website or, for something a bit more stable, I use homebrew (`brew install neovim`).
+
 ## Customization Details
 
 ### Use a 'nerd' font in terminal settings
@@ -12,7 +14,7 @@ It helps to use a "nerd" font, so that various icons will show up in the lualine
 
 ### Turn off the autoformat-on-save feature (autocmds.lua BLOCK 1)
 
-**Context.** Lazyvim was formatting files upon saves.  I liked this file at first, but started to wonder whether it was causing problems with malformed files that might confuse the LSP formatter.  I don't know for sure that this is a problem, but in any case formatting is as simple as `SPC c f` and so I turned off the feature by adding BLOCK 1 to the `.config/nvim/lua/config/autocmds.lua` file.`
+**Context.** Lazyvim was formatting files upon saves.  I liked this feature at first, but after a while, I started to wonder whether it was causing problems with malformed files that might confuse the LSP formatter.  I don't know for sure that this is a problem, but in any case formatting is as simple as `SPC c f` and so I turned off the feature by adding BLOCK 1 to the `.config/nvim/lua/config/autocmds.lua` file.`
 
 Note that autoformat-on-save can be turned on and off with `SPC u f`, if desired.
 
@@ -26,11 +28,11 @@ This is done in the `lua/plugins/lualine.lua` file.  I replaced something else t
 
 ### Switch to a new colour scheme
 
-I switched to `slate` by adding the `lua/plugins/colorscheme.lua` file.
+I switched to `slate` by adding the `lua/plugins/colorscheme.lua` file. It's easy to switch color schemes on the fly (just type `colorscheme` and then TAB and you'll see the choices) and I do that quite often, if I'm getting tired and want a break. I dislike the pastel ones but for example `:colorscheme evening` is one that I switch to quite often. The scheme I prefer depends a bit on the sort of content I'm editing, because for example in markdown (that's the format in the file I'm editing here) does not colourize section headings in all the schemes.
 
 ### Use soft wrapping
 
-I set up soft wrapping (as explained by CLark Richards) at NOTE 2 of the `lua/config/options.lua` file.
+I set up soft wrapping (as explained by Clark Richards) at NOTE 2 of the `lua/config/options.lua` file.
 
 ### Store copied things on system clipboard
 
