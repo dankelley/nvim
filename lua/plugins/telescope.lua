@@ -1,4 +1,5 @@
 -- from https://github.com/josean-dev/dev-environment-files/blob/main/.config/nvim/lua/josean/plugins/telescope.lua
+if true then return {} end
 return {
   "nvim-telescope/telescope.nvim",
   branch = "0.1.x",

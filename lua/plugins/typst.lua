@@ -1,7 +1,9 @@
 return {
-    'chomosuke/typst-preview.nvim',
-    --lazy = false, -- or ft = 'typst'
+    'kaarmu/typst.vim',
     ft = 'typst',
-    version = '1.*',
-    build = function() require 'typst-preview'.update() end,
+    lazy = false,
+    --'chomosuke/typst-preview.nvim',
+    --lazy = false, -- or ft = 'typst'
+    --version = '1.*',
+    --build = function() require 'typst-preview'.update() end,
 }
