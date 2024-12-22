@@ -1,6 +1,8 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.coding.nvim-cmp",
+    "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.r"
   ],
   "news": {
