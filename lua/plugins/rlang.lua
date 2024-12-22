@@ -6,22 +6,22 @@ return {
         opts = { assignment_keymap = "_" },
     },
     {
+        -- https://github.com/R-nvim/R.nvim?tab=readme-ov-file#tree-sitter
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup({
-                ensure_installed = { "markdown", "markdown_inline", "r", "rnoweb" },
+                ensure_installed = { "markdown", "markdown_inline", "r", "rnoweb", "yaml", "csv" },
+                highlight = { enable = true },
             })
-        end,
+        end
     },
-    --"R-nvim/cmp-r",
+    --"R-nvim/cmp-r", -- https://github.com/R-nvim/R.nvim?tab=readme-ov-file#autocompletion
     --{
-    --  "hrsh7th/nvim-cmp",
-    --  --commit = "e1757aea6145d14208f3035f6b56c99e36593799",
-    --  --filetypes = { "r", "rmd", "quarto", "rnoweb", "rhelp" },
-    --  config = function()
-    --    require("cmp").setup({ sources = { { name = "cmp_r" } } })
-    --    require("cmp_r").setup({})
-    --  end,
+    --    "hrsh7th/nvim-cmp",
+    --    config = function()
+    --        require("cmp").setup({ sources = { { name = "cmp_r" } } })
+    --        require("cmp_r").setup({})
+    --    end,
     --},
 }
