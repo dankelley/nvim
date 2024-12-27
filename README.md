@@ -117,6 +117,17 @@ print(vim.inspect(vim.log.levels))
 
 in a neovim window.
 
+## Disable minipairs
+
+This following line in `options.lua` (see Reference 2) prevents the editor from
+entering a second quote when `"` is typed, or a second brace when `{` is typed.
+
+```lua
+vim.b.minipairs_disable = true
+```
+
 ## References
 
 1. How I Setup Neovim To Make It AMAZING in 2024: The Ultimate Guide, 2024. <https://www.youtube.com/watch?v=6pAG3BHurdM>.
+
+2. <https://www.reddit.com/r/neovim/comments/1am1t7l/lazyvim_how_to_turn_off_automatic_double_backticks/>)

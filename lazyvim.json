@@ -1,7 +1,10 @@
 {
   "extras": [
     "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.ai.copilot-chat",
     "lazyvim.plugins.extras.coding.nvim-cmp",
+    "lazyvim.plugins.extras.editor.mini-files",
+    "lazyvim.plugins.extras.lang.lean",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.r"
   ],

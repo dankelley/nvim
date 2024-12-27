@@ -10,3 +10,4 @@ vim.o.shiftwidth = 4
 vim.g.maplocalleader = ","        -- NOTE 1
 vim.opt.wrap = true               -- NOTE 2
 vim.opt.clipboard = "unnamedplus" -- NOTE 3
+vim.b.minipairs_disable = true    -- NOTE 4

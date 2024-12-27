@@ -1,4 +1,4 @@
--- https://www.reddit.com/r/neovim/comments/18rcqiw/comment/khh2tb9/
+if true then return {} end
 return {
     "hrsh7th/nvim-cmp",
     opts = function(_, opts)
