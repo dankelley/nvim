@@ -3,3 +3,4 @@
 -- Add any additional keymaps here
 vim.keymap.set("n", "<F8>", "14j")
 vim.keymap.set("n", "<F7>", "14k")
+vim.keymap.set("i", "jj", "<ESC>", { silent = true })
