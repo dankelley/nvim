@@ -3,6 +3,8 @@ return ({
     "folke/snacks.nvim",
     ---@type snacks.Config
     opts = {
+        picker = {
+        },
         dashboard = {
             -- your dashboard configuration comes here
             -- or leave it empty to use the default settings
