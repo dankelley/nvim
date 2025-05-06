@@ -12,7 +12,6 @@ return {
                         vim.api.nvim_buf_set_keymap(0, "n", "<Enter>", "<Plug>RDSendLine", {})
                         vim.api.nvim_buf_set_keymap(0, "v", "<Enter>", "<Plug>RSendSelection", {})
                         -- https://github.com/R-nvim/R.nvim/issues/393#issuecomment-2853170674
-                        -- vim.api.nvim_buf_set_keymap(0, "n", "<Leader>cf", ":RFormat<CR>", {})
                         -- vim.api.nvim_buf_set_keymap(0, "n", "<Leader>cf", "<Plug>RFormat", {})
                     end
                 },
