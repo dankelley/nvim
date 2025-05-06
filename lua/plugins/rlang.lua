@@ -14,9 +14,11 @@ return {
                     end
                 },
                 pdfviewer = "",
-                R_app = "radian",
+                -- R_app = "radian",
+                R_app = "R",
                 R_args = {}, -- "--quiet", "--no-save" },
-                bracketed_paste = true,
+                -- bracketed_paste = true,
+                bracketed_paste = false,
                 min_editor_width = 72,
                 rconsole_width = 78,
                 objbr_mappings = {                                  -- Object browser keymap

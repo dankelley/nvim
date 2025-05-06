@@ -1,4 +1,4 @@
-if true then return {} end
+-- if true then return {} end
 return {
     "epwalsh/obsidian.nvim",
     version = "*", -- recommended, use latest release instead of latest commit
@@ -22,14 +22,9 @@ return {
         workspaces = {
             {
                 name = "personal",
-                path = "~/vaults/personal",
-            },
-            {
-                name = "work",
-                path = "~/vaults/work",
+                path = "~/git/obsidian",
             },
         },
-
         -- see below for full list of options 👇
     },
 }
