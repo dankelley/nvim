@@ -30,6 +30,16 @@ vim.api.nvim_create_autocmd("FileType", {
             buffer = true,
             desc = "Send line to Julia REPL and move down",
         })
+        -- Visual mode: send selected lines and stay on next line after selection
+        vim.keymap.set("v", "<CR>", function()
+            iron.visual_send()
+            -- move cursor to the line after the visual selection
+            vim.cmd("normal! gv") -- reselect the last visual selection
+            vim.cmd("normal! `>j") -- jump to end and go down one line
+        end, {
+            buffer = true,
+            desc = "Send visual selection to Julia REPL and move down",
+        })
     end,
 })
 
