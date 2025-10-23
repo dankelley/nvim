@@ -13,7 +13,9 @@
 return {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
-    config = true,
+    config = function()
+        vim.api.nvim_set_hl(0, "SpellBad", { fg = "#FF0000", sp = "#FF0000", bold = true, undercurl = true })
+    end,
     opts = ...
 }
 

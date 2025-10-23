@@ -11,3 +11,4 @@ vim.g.maplocalleader = ","        -- NOTE 1
 vim.opt.wrap = true               -- NOTE 2
 vim.opt.clipboard = "unnamedplus" -- NOTE 3
 vim.b.minipairs_disable = true    -- NOTE 4
+vim.api.nvim_set_hl(0, "SpellBad", { fg = "#FF0000", sp = "#FF0000", bold = true, undercurl = true })
