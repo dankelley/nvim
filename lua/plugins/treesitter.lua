@@ -1,13 +1,17 @@
 return {
-  -- treesitter
-  {
     "nvim-treesitter/nvim-treesitter",
-    --run = ":TSUpdate",
+    branch = "main", -- Add this line
     build = ":TSUpdate",
-    config = function()
-      require("nvim-treesitter.configs").setup({
-        ensure_installed = { "markdown", "markdown_inline", "r", "rnoweb", "latex" },
-      })
-    end,
-  },
+    opts = {
+        ensure_installed = {
+            "r",
+            "julia",
+            "c",
+            "markdown",
+            "python",
+            "regex",
+            "yaml",
+            "vim",
+        },
+    },
 }

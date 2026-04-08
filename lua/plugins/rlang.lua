@@ -53,7 +53,7 @@ return {
         run = ":TSUpdate",
         config = function()
             require("nvim-treesitter.configs").setup({
-                ensure_installed = { "markdown", "markdown_inline", "r", "rnoweb", "yaml" },
+                ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "r", "rnoweb", "yaml" },
                 highlight = { enable = true },
             })
         end,
